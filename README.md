@@ -12,8 +12,16 @@ Set up the prerequisites:
 ./setup.sh
 ```
 
-Check the health of CNAMEs of a user's repos with gh-pages:
+Anonymously check the health of CNAMEs of a user's repos with gh-pages:
 
 ```
 ./checkall.sh stuartpb
 ```
+
+If you set up a new [personal access token][1], you can use it for more accurate / non-rate-limited results:
+
+```
+./checkall.sh stuartpb OAUTH_TOKEN_GOES_HERE
+```
+
+[1]: https://github.com/settings/tokens
